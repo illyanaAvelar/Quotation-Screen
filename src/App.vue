@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <Header/>
+    <QuotationInfo/>
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
+import QuotationInfo from './components/QuotationInfo.vue'
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    QuotationInfo
   }
 }
 </script>
