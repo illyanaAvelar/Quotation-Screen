@@ -1,26 +1,32 @@
 <template>
-<div id="header">
-  <div id="tabs">
-    <div id=provider>
-      Fornecedor ▾
+<div>
+  <div id="header">
+    <div id="tabs">
+      <div id="provider">
+        Fornecedor ▾
+      </div>
+      <div id="tab">
+        Visão Geral
+      </div>
+      <div id="tab">
+        Cotações
+      </div>
+      <div id="tab">
+        Perfil
+      </div>
+      <div id="tab">
+        Fornecedores
+      </div>
     </div>
-    <div id="tab">
-      Visão Geral
-    </div>
-    <div id="tab">
-      Cotações
-    </div>
-    <div id="tab">
-      Perfil
-    </div>
-    <div id="tab">
-      Fornecedores
+    <div id="icons"> 
+      <search-icon size="1.5x" id="feather-icon"></search-icon>
+      <bell-icon size="1.5x" id="feather-icon"></bell-icon>
+      <settings-icon size="1.5x" id="feather-icon"></settings-icon>
     </div>
   </div>
-  <div id="icons"> 
-    <search-icon size="1.5x" id="feather-icon"></search-icon>
-    <bell-icon size="1.5x" id="feather-icon"></bell-icon>
-    <settings-icon size="1.5x" id="feather-icon"></settings-icon>
+  <div id="current">
+    <div id="circle">28</div>
+    <div id="current-writing">Atuais</div>
   </div>
 </div>
 </template>
@@ -46,7 +52,8 @@ export default {
   justify-content: space-between;
   height: 60px;
   width: 100%;
-  background-color: #127C84;
+  background-color: #127c84;
+  box-shadow: 0 4px 2px -2px #e4e4e4;
 }
 #icons {
   width: 12%;
@@ -84,5 +91,23 @@ export default {
   color: white;
   align-self: center;
   font-size: 1.5vw;
+}
+#current {
+  background-color: white;
+  height: 6vh;
+  width: 100%;
+  box-shadow: 0 4px 2px -2px #e4e4e4;
+}
+#circle {
+  background-color: #127c84;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+#current-writing {
+  color: #127c84;
 }
 </style>
