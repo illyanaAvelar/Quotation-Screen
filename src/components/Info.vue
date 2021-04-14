@@ -1,5 +1,5 @@
 <template>
-  <div id="fields">
+  <div id="fields" :style="infoStyle">
     <div id="description">
         {{description}} 
     </div>  
@@ -10,12 +10,20 @@
 </template>
 
 <script>
-
 export default {
   name: 'Info',
   props: {
     description: String,
-    value: String  
+    value: String,
+    isColumn: Boolean  
+  },
+  computed: {
+    infoStyle() {
+      return {
+        "flex-direction": this.isColumn ? "column" : "row",
+        "font-size": this.isColumn ? "0.8vw" : "1vw"
+      }
+    }
   }
 }
 </script>
@@ -27,12 +35,11 @@ export default {
   flex-direction: row;
 }
 #description {
-  font-size: 1vw;
   color: #706f6f
 }
 #value {
-  font-size: 1vw;
-  color: #000000;
+  font-size: 1vw;  
+  color: rgb(34, 34, 34);
   font-weight: 550;
 }
 </style>
