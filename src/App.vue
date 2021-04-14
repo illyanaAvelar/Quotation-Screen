@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <Header/>
+    <QuotationInfo/>
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
+import QuotationInfo from './components/QuotationInfo.vue'
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    QuotationInfo
   }
 }
 </script>
@@ -22,5 +25,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-color: #fafafa;
 }
 </style>
