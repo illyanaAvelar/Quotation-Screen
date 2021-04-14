@@ -15,7 +15,7 @@
           <Info description="RCS: " value="2"/> 
         </div>
         <div id="right-top-info">
-          <button>ENVIAR COTAÇÂO</button>          
+          <Button name="ENVIAR COTAÇÃO"/>          
           <edit-icon size="1.2x" class="custom-class"></edit-icon>
           <x-circle-icon size="1.2x" class="custom-class"></x-circle-icon>
           <more-horizontal-icon size="1.2x" class="custom-class"></more-horizontal-icon>
@@ -43,6 +43,8 @@
 <script>
 import { ArrowLeftIcon, EditIcon, XCircleIcon, MoreHorizontalIcon, SearchIcon, ColumnsIcon, SlidersIcon } from 'vue-feather-icons'
 import Info from './Info.vue'
+import Button from './Button.vue'
+
 export default {
   name: 'QuotationInfo',
   props: {
@@ -55,7 +57,8 @@ export default {
     SearchIcon,
     ColumnsIcon,
     SlidersIcon,
-    Info     
+    Info,
+    Button     
   }
 }
 </script>
@@ -117,5 +120,6 @@ export default {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  align-items: center;
 }
 </style>
