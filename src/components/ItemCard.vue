@@ -3,7 +3,6 @@
   <div id="border"></div>
   <div id="card-content">
     <div id="upper">
-
       <div id="upper-left">
         <div id="item">
           <Info description="ITEM" value="Porc vag ferrovs n225p43ge" :isColumn="true"/>
@@ -157,8 +156,26 @@ form {
 }
 @media (orientation:portrait), (max-width: 900px)
 {
-  #other-infos {
+  #upper {
     flex-direction: column;
+  }
+  #bottom {
+    flex-direction: column;
+  }
+  #bottom-right {
+    width: 100%;
+  }
+  #bottom-left {
+    width: 100%;
+  }
+  #upper-right {
+    width: 100%;
+  }
+  #upper-left {
+    width: 100%;
+  }  
+  #item-card {
+    height: 240px;
   }
 }
 </style>

@@ -21,7 +21,7 @@ export default {
     infoStyle() {
       return {
         "flex-direction": this.isColumn ? "column" : "row",
-        "font-size": this.isColumn ? "0.8vw" : "1vw"
+        "font-size": this.isColumn ? "12px" : "14px"
       }
     }
   }
@@ -36,11 +36,13 @@ export default {
 #description {
   color: #706f6f;
   text-align: start;
+  margin-right: 4px;
 }
 #value {
-  font-size: 1vw;  
+  font-size: 14px;  
   color: rgb(34, 34, 34);
   font-weight: 550;
   text-align: start;
+  margin-top: 1px;
 }
 </style>

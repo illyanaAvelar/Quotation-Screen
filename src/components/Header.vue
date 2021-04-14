@@ -79,7 +79,7 @@ export default {
 #tab {
   color: white;
   opacity: 0.8;
-  font-size: 1vw;
+  font-size: 14px;
   margin: 8vh
 }
 #tab:hover {
