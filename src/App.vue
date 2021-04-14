@@ -2,18 +2,24 @@
   <div id="app">
     <Header/>
     <QuotationInfo/>
+    <ItemCard/>
+    <ItemCard/>
+    <ItemCard/>
+    <ItemCard/>
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import QuotationInfo from './components/QuotationInfo.vue'
+import ItemCard from './components/ItemCard.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    QuotationInfo
+    QuotationInfo,
+    ItemCard
   }
 }
 </script>
