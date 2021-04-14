@@ -23,4 +23,9 @@ label {
 input[type="checkbox"]:checked {
   color: #127c84;
 }
+input:hover {
+  cursor: pointer;
+  pointer-events: 'auto';
+  opacity: 1
+}
 </style>
