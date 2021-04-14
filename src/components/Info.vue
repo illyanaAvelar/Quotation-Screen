@@ -31,15 +31,16 @@ export default {
 <style scoped>
 #fields {
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
 }
 #description {
-  color: #706f6f
+  color: #706f6f;
+  text-align: start;
 }
 #value {
   font-size: 1vw;  
   color: rgb(34, 34, 34);
   font-weight: 550;
+  text-align: start;
 }
 </style>

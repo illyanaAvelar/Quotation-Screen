@@ -17,7 +17,7 @@ export default {
   computed: {
     inputStyle() {
       return {
-        "width": this.size == "small" ? "85px" : (this.size === "medium" ? "130px" : "160px"),
+        "width": this.size == "small" ? "85px" : (this.size === "medium" ? "135px" : "160px"),
       }
     }
   }

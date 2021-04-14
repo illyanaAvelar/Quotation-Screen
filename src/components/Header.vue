@@ -98,17 +98,25 @@ export default {
   width: 100%;
   box-shadow: 0 4px 2px -2px #e4e4e4;
   padding: 15px;
+  text-align: start;
+  display: flex;
+  flex-direction: row;
 }
 #circle {
-  background-color: #127c84;
+  background-color: #39a8b3;
   height: 20px;
   width: 20px;
   border-radius: 50%;
   color: white;
   font-size: 12px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #current-writing {
-  color: #127c84;
+  color: #39a8b3;
+  font-weight: 500;
+  margin-left: 7px;
+  margin-top: 2px;
 }
 </style>

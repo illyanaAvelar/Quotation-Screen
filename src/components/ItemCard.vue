@@ -36,9 +36,11 @@
           <Input description="Preço bruto unit." size="medium"/>
           <Input description="Peso (c/ embalagem)" size="medium"/>
         </form>
-        <Button name="ENVIAR"/>
-        <x-circle-icon size="2.5x" color="white" fill="red"></x-circle-icon>
-        <help-circle-icon size="2.5x" color="white" fill="rgb(201, 180, 22)"></help-circle-icon>
+        <div id="icons">
+          <Button name="ENVIAR"/>
+          <x-circle-icon size="2x" color="white" fill="red"></x-circle-icon>
+          <help-circle-icon size="2x" color="white" fill="rgb(201, 180, 22)"></help-circle-icon>
+        </div>
       </div>
     </div>
     </div>
@@ -93,6 +95,8 @@ export default {
 #other-infos {
   display: flex;
   flex-direction: row;
+  width: 60%;
+  justify-content: space-around;
 }
 #upper-left {
   display: flex;
@@ -105,7 +109,7 @@ export default {
   display: flex;
   flex-direction: row;
   width: 50%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 #upper {
   display: flex;
@@ -132,6 +136,16 @@ export default {
   flex-direction: row;
   width: 50%;
   justify-content: space-between;
+}
+#item {
+  max-width: 40%;
+}
+#icons {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 45%;
+  align-items: center;
 }
 form {
   display: flex;
