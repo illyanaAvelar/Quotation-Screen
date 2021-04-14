@@ -94,9 +94,10 @@ export default {
 }
 #current {
   background-color: white;
-  height: 6vh;
+  height: 4vh;
   width: 100%;
   box-shadow: 0 4px 2px -2px #e4e4e4;
+  padding: 15px;
 }
 #circle {
   background-color: #127c84;

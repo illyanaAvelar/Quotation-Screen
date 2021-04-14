@@ -38,8 +38,8 @@ export default {
   color: #706f6f
 }
 #value {
-  font-size: 1vw;
-  color: #000000;
+  font-size: 1vw;  
+  color: rgb(34, 34, 34);
   font-weight: 550;
 }
 </style>

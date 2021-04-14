@@ -22,11 +22,23 @@
     </div>
     <div id="bottom">
       <div id="bottom-left">
+        <form>
+          <Input description="Prazo de entrega" size="medium"/>
+          <Input description="NCM" size="medium"/>
+          <Input description="IPI (%)"/>
+          <Input description="ICMS"/>
+          <Input description="PIS/COFINS"/>
+        </form>
       </div>
       <div id="bottom-right">
+        <form>
+          <Input description="Base Red."/>
+          <Input description="Preço bruto unit." size="medium"/>
+          <Input description="Peso (c/ embalagem)" size="medium"/>
+        </form>
         <Button name="ENVIAR"/>
-        <x-circle-icon size="1.5x" color="white" fill="red"></x-circle-icon>
-        <help-circle-icon size="1.5x" color="white" fill="rgb(201, 180, 22)"></help-circle-icon>
+        <x-circle-icon size="2.5x" color="white" fill="red"></x-circle-icon>
+        <help-circle-icon size="2.5x" color="white" fill="rgb(201, 180, 22)"></help-circle-icon>
       </div>
     </div>
     </div>
@@ -38,6 +50,7 @@ import { HelpCircleIcon, XCircleIcon} from 'vue-feather-icons'
 import Button from './Button.vue'
 import CheckBox from './CheckBox.vue'
 import Info from './Info.vue'
+import Input from './Input.vue'
 
 export default {
   name: 'ItemCard',
@@ -49,6 +62,7 @@ export default {
     Info,
     CheckBox,
     Button,
+    Input,
   }
 }
 </script>
@@ -59,7 +73,7 @@ export default {
   background-color: white;
   box-shadow: 0px 3px 6px #00000029;
   border-radius: 7px;
-  height: 110px;
+  height: 120px;
   margin: 18px 27px 0px 27px;
   display: flex;
   flex-direction: row;
@@ -85,6 +99,7 @@ export default {
   flex-direction: row;
   width: 50%;
   justify-content: space-between;
+  margin-right: 25px;
 }
 #upper-right {
   display: flex;
@@ -97,12 +112,14 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   height: 50%;
+  margin-bottom: 10px;
 }
 #bottom {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 50%;
+  margin-top: 10px;
 }
 #bottom-left {
   display: flex;
@@ -115,6 +132,14 @@ export default {
   flex-direction: row;
   width: 50%;
   justify-content: space-between;
+}
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-right: 15px;
+  align-items: center;
 }
 @media (orientation:portrait), (max-width: 900px)
 {
