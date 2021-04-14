@@ -16,9 +16,9 @@
         </div>
         <div id="right-top-info">
           <Button name="ENVIAR COTAÇÃO"/>          
-          <edit-icon size="1.2x" class="custom-class"></edit-icon>
-          <x-circle-icon size="1.2x" class="custom-class"></x-circle-icon>
-          <more-horizontal-icon size="1.2x" class="custom-class"></more-horizontal-icon>
+          <edit-icon size="1.2x" id="feather-icon"></edit-icon>
+          <x-circle-icon size="1.2x" id="feather-icon"></x-circle-icon>
+          <more-horizontal-icon size="1.2x" id="feather-icon"></more-horizontal-icon>
         </div>
       </div>
 
@@ -32,9 +32,9 @@
       <div id="lines">
         LINHAS
         <div id="horizontal-line"></div>
-        <search-icon size="1.2x" class="custom-class"></search-icon>
-        <sliders-icon size="1.2x" class="custom-class"></sliders-icon>
-        <columns-icon size="1.2x" class="custom-class"></columns-icon>
+        <search-icon size="1.2x" id="feather-icon"></search-icon>
+        <sliders-icon size="1.2x" id="feather-icon"></sliders-icon>
+        <columns-icon size="1.2x" id="feather-icon"></columns-icon>
       </div>
       
   </div>
@@ -121,5 +121,10 @@ export default {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
+}
+#feather-icon:hover {
+  cursor: pointer;
+  pointer-events: 'auto';
+  opacity: 0.7
 }
 </style>

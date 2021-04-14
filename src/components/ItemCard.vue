@@ -37,8 +37,8 @@
         </form>
         <div id="icons">
           <Button name="ENVIAR"/>
-          <x-circle-icon size="2x" color="white" fill="red"></x-circle-icon>
-          <help-circle-icon size="2x" color="white" fill="rgb(201, 180, 22)"></help-circle-icon>
+          <x-circle-icon size="2x" color="white" fill="red" id="feather-icon"></x-circle-icon>
+          <help-circle-icon size="2x" color="white" fill="rgb(201, 180, 22)" id="feather-icon"></help-circle-icon>
         </div>
       </div>
     </div>
@@ -153,6 +153,11 @@ form {
   width: 100%;
   margin-right: 15px;
   align-items: center;
+}
+#feather-icon:hover {
+  cursor: pointer;
+  pointer-events: 'auto';
+  opacity: 0.7
 }
 @media (orientation:portrait), (max-width: 900px)
 {

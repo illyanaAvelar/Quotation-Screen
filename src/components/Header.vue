@@ -92,6 +92,11 @@ export default {
   align-self: center;
   font-size: 1.5vw;
 }
+#provider:hover {
+  cursor: pointer;
+  pointer-events: 'auto';
+  opacity: 0.8
+}
 #current {
   background-color: white;
   height: 4vh;
