@@ -5,18 +5,18 @@
       <div id="provider">
         Fornecedor ▾
       </div>
-      <div id="tab">
+      <router-link to="/general" id="tab">
         Visão Geral
-      </div>
-      <div id="tab">
+      </router-link>
+      <router-link to="/" id="tab">
         Cotações
-      </div>
-      <div id="tab">
+      </router-link>
+      <router-link to="/profile" id="tab">
         Perfil
-      </div>
-      <div id="tab">
+      </router-link>
+      <router-link to="/suppliers" id="tab">
         Fornecedores
-      </div>
+      </router-link>
     </div>
     <div id="icons"> 
       <search-icon size="1.5x" id="feather-icon"></search-icon>
@@ -75,6 +75,9 @@ export default {
   justify-content: space-between;
   align-self: center;
   margin: 2vw;
+}
+a:-webkit-any-link {
+  text-decoration: none
 }
 #tab {
   color: white;
