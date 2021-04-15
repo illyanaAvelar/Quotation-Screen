@@ -1,6 +1,6 @@
 <template>
 <div>
-  Geral
+  <h1>Geral</h1>
 </div>
 </template>
 
